@@ -7,7 +7,7 @@ import logging
 import requests
 from airbyte_cdk.sources import AbstractSource
 from airbyte_cdk.sources.streams import Stream
-from source_USVoteFoundation.streams import (
+from .streams import (
     States,
     Regions,
     Offices,
