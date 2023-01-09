@@ -29,7 +29,7 @@ RUN apk --no-cache add bash
 
 # copy payload code only
 COPY main.py ./
-COPY source_usvote_foundation ./source-usvote-foundation
+COPY source_usvote_foundation ./source_usvote_foundation
 
 ENV AIRBYTE_ENTRYPOINT "python /airbyte/integration_code/main.py"
 ENTRYPOINT ["python", "/airbyte/integration_code/main.py"]
