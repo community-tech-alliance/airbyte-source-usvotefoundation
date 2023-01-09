@@ -1,0 +1,39 @@
+{
+	"properties": {
+		"id": {
+			"type": ["string"]
+		},
+		"resource_uri": {
+			"type": ["string"]
+		},
+		"region_name": {
+			"type": ["string"]
+		},
+		"municipality": {
+			"type": ["string"]
+		},
+		"municipality_name": {
+			"type": ["string"]
+		},
+		"municipality_type": {
+			"type": ["string"]
+		},
+		"state": {
+			"type": ["string"]
+		},
+		"state_abbr": {
+			"type": ["string"]
+		},
+		"state_name": {
+			"type": ["string"]
+		},
+		"county": {
+			"type": ["string"]
+		},
+		"county_name": {
+			"type": ["string"]
+		}
+	},
+	"type": "object",
+	"additionalProperties": false
+}

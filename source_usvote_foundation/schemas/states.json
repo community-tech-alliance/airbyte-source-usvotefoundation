@@ -1,0 +1,18 @@
+{
+	"properties": {
+		"id": {
+			"type": ["string"]
+		},
+		"name": {
+			"type": ["string"]
+		},
+		"abbr": {
+			"type": ["string"]
+		},
+		"resource_uri": {
+			"type": ["string"]
+		}
+	},
+	"type": "object",
+	"additionalProperties": false
+}

@@ -1,0 +1,42 @@
+{
+  "documentationUrl": "https://docsurl.com",
+  "connectionSpecification": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "USVoteFoundation Engagement Spec",
+    "type": "object",
+    "required": ["api_key"],
+    "additionalProperties": false,
+    "properties": {
+      "api_key": {
+        "type": "string",
+        "title": "API key",
+        "airbyte_secret": true,
+        "order": 1
+      },
+      "state_id": {
+        "type": "string",
+        "title": "State ID",
+        "airbyte_secret": false,
+        "order": 2
+      },
+      "region_name": {
+        "type": "string",
+        "title": "Region Name",
+        "airbyte_secret": false,
+        "order": 3
+      },
+      "region_id": {
+        "type": "string",
+        "title": "Region ID",
+        "airbyte_secret": false,
+        "order": 4
+      },
+      "office_id": {
+        "type": "string",
+        "title": "Office ID",
+        "airbyte_secret": false,
+        "order": 5
+      }
+    }
+  }
+}

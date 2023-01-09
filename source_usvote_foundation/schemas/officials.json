@@ -1,0 +1,45 @@
+{
+	"properties": {
+ 		"id": {
+			"type": ["string","null"]
+			 },
+ 		"office_type": {
+			"type": ["string","null"]
+			 },
+ 		"office_name": {
+			"type": ["string","null"]
+			 },
+ 		"title": {
+			"type": ["string","null"]
+			 },
+ 		"suffix": {
+			"type": ["string","null"]
+			 },
+ 		"first_name": {
+			"type": ["string","null"]
+			 },
+ 		"initial": {
+			"type": ["string","null"]
+			 },
+ 		"last_name": {
+			"type": ["string","null"]
+			 },
+ 		"email": {
+			"type": ["string","null"]
+			 },
+ 		"phone": {
+			"type": ["string","null"]
+			 },
+ 		"fax": {
+			"type": ["string","null"]
+			 },
+ 		"office": {
+			"type": ["string","null"]
+			 },
+ 		"resource_uri": {
+			"type": ["string","null"]
+			 }
+		},
+	"type": "object",
+	"additionalProperties": false
+}
