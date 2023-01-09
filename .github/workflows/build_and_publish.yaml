@@ -22,4 +22,4 @@ jobs:
     - name: Build the source_usvote_foundation Docker image
       run: |
         docker build . --tag ghcr.io/community-tech-alliance/source-usvote-foundation:$IMAGE_TAG
-        docker push ghcr.io/community-tech-alliance/source_usvote_foundation:$IMAGE_TAG
+        docker push ghcr.io/community-tech-alliance/source-usvote-foundation:$IMAGE_TAG
