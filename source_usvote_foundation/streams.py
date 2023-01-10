@@ -50,16 +50,6 @@ class USVoteFoundationStream(HttpStream, ABC):
             next_endpoint = next_url.replace(self.url_base,"")
             return next_endpoint
 
-    def request_params(
-            self, stream_state: Mapping[str, Any], stream_slice: Mapping[str, Any] = None, next_page_token: Mapping[str, Any] = None
-    ) -> MutableMapping[str, Any]:
-
-        params = {
-        #    "state_id": self.config["state_id"]
-        }
-
-        return params
-
     def parse_response(
         self,
         response: requests.Response,
