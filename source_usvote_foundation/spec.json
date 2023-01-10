@@ -13,29 +13,65 @@
         "airbyte_secret": true,
         "order": 1
       },
-      "state_id": {
-        "type": "string",
-        "title": "State ID",
-        "airbyte_secret": false,
-        "order": 2
-      },
       "region_name": {
         "type": "string",
         "title": "Region Name",
         "airbyte_secret": false,
-        "order": 3
+        "order": 2
       },
       "region_id": {
         "type": "string",
         "title": "Region ID",
         "airbyte_secret": false,
+        "order": 3
+      },
+      "state_id": {
+        "type": "string",
+        "title": "State ID",
+        "airbyte_secret": false,
         "order": 4
+      },
+      "state_abbr": {
+        "type": "string",
+        "title": "State code",
+        "airbyte_secret": false,
+        "order": 5
+      },
+      "county": {
+        "type": "string",
+        "title": "County ID",
+        "airbyte_secret": false,
+        "order": 2
+      },
+      "county_name": {
+        "type": "string",
+        "title": "County Name",
+        "airbyte_secret": false,
+        "order": 6
+      },
+      "municipality": {
+        "type": "string",
+        "title": "Municipality ID",
+        "airbyte_secret": false,
+        "order": 7
+      },
+      "municipality_name": {
+        "type": "string",
+        "title": "Municipality Type",
+        "airbyte_secret": false,
+        "order": 8
+      },
+      "municipality_type": {
+        "type": "string",
+        "title": "Municipality type",
+        "airbyte_secret": false,
+        "order": 9
       },
       "office_id": {
         "type": "string",
         "title": "Office ID",
         "airbyte_secret": false,
-        "order": 5
+        "order": 10
       }
     }
   }
