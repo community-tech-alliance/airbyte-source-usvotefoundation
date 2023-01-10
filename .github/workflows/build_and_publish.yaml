@@ -3,7 +3,7 @@ name: build_and_publish_image
 on:
   push:
     branches:
-      - master
+      - main
     tags:
       - v*
   pull_request:
