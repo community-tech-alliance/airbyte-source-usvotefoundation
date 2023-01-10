@@ -1,283 +1,79 @@
 {
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"type": "object",
 	"properties": {
-	  "id": {
-		"type": "string"
-	  },
-	  "updated": {
-		"type": "string"
-	  },
-	  "region": {
-		"type": "string"
-	  },
-	  "hours": {
-		"type": "string"
-	  },
-	  "notes": {
-		"type": "string"
-	  },
-	  "status": {
-		"type": "string"
-	  },
-	  "addresses": {
-		"type": "array",
-		"items": [
-		  {
-			"type": "object",
+		"id": {
+			"type": ["string","null"]
+		},
+		"updated": {
+			"type": ["string","null"]
+		},
+		"region": {
+			"type": ["string","null"]
+		},
+		"hours": {
+			"type": ["string","null"]
+		},
+		"notes": {
+			"type": ["string","null"]
+		},
+		"status": {
+			"type": ["string","null"]
+		},
+		"addresses": {
+			"type": ["array"],
 			"properties": {
-			  "id": {
-				"type": "string"
-			  },
-			  "address_to": {
-				"type": "string"
-			  },
-			  "street1": {
-				"type": "string"
-			  },
-			  "street2": {
-				"type": "string"
-			  },
-			  "city": {
-				"type": "string"
-			  },
-			  "state": {
-				"type": "string"
-			  },
-			  "zip": {
-				"type": "string"
-			  },
-			  "zip4": {
-				"type": "string"
-			  },
-			  "website": {
-				"type": "string"
-			  },
-			  "is_physical": {
-				"type": "string"
-			  },
-			  "is_regular_mail": {
-				"type": "string"
-			  },
-			  "functions": {
+				"id": {"type": ["string","null"]},
+				"address_to": {"type": ["string","null"]},
+				"street1": {"type": ["string","null"]},
+				"street2": {"type": ["string","null"]},
+				"city": {"type": ["string","null"]},
+				"state": {"type": ["string","null"]},
+				"zip": {"type": ["string","null"]},
+				"zip4": {"type": ["string","null"]},
+				"website": {"type": ["string","null"]},
+				"is_physical": {"type": ["string","null"]},
+				"is_regular_mail": {"type": ["string","null"]},
+				"functions": {"type": ["array","null"]},
+				"primary_contact_uri": {"type": ["string","null"]}
+			},
+			"contacts": {
+						"type": ["object","null"],
+						"properties": {
+							"id": {"type": ["string","null"]},
+							"address_uri": {"type": ["string","null"]},
+							"official_uri": {"type": ["string","null"]},
+							"resource_uri": {"type": ["string","null"]},
+							"main_email": {"type": ["string","null"]},
+							"main_phone_number": {"type": ["string","null"]},
+							"main_fax_number": {"type": ["string","null"]}
+							}
+						},
+			"officials": {
 				"type": "array",
-				"items": [
-				  {
-					"type": "string"
-				  },
-				  {
-					"type": "string"
-				  },
-				  {
-					"type": "string"
-				  },
-				  {
-					"type": "string"
-				  },
-				  {
-					"type": "string"
-				  }
-				]
-			  },
-			  "primary_contact_uri": {
-				"type": "string"
-			  },
-			  "contacts": {
-				"type": "array",
-				"items": [
-				  {
-					"type": "object",
-					"properties": {
-					  "id": {
-						"type": "string"
-					  },
-					  "address_uri": {
-						"type": "string"
-					  },
-					  "official_uri": {
-						"type": "string"
-					  }
-					},
-					"required": [
-					  "id",
-					  "address_uri",
-					  "official_uri"
-					]
-				  }
-				]
-			  },
-			  "resource_uri": {
-				"type": "string"
-			  },
-			  "main_email": {
-				"type": "string"
-			  },
-			  "main_phone_number": {
-				"type": "string"
-			  },
-			  "main_fax_number": {
-				"type": "string"
-			  }
+				"items": {
+				  "type": [
+					"object"
+				  ],
+				  "properties": {
+						"id": {"type": ["string","null"]},
+						"office_type": {"type": ["string","null"]},
+						"title": {"type": ["string","null"]},
+						"suffix": {"type": ["string","null"]},
+						"first_name": {"type": ["string","null"]},
+						"initial": {"type": ["string","null"]},
+						"last_name": {"type": ["string","null"]},
+						"email": {"type": ["string","null"]},
+						"phone": {"type": ["string","null"]},
+						"fax": {"type": ["string","null"]},
+						"office_uri": {"type": ["string","null"]},
+						"resource_uri": {"type": ["string","null"]}
+						}
+					}
+				},
+		"resource_uri": {"type": ["string","null"]},
+		"geoid": {"type": ["string","null"]},
+		"type": {"type": ["string","null"]}
 			},
-			"required": [
-			  "id",
-			  "address_to",
-			  "street1",
-			  "street2",
-			  "city",
-			  "state",
-			  "zip",
-			  "zip4",
-			  "website",
-			  "is_physical",
-			  "is_regular_mail",
-			  "functions",
-			  "primary_contact_uri",
-			  "contacts",
-			  "resource_uri",
-			  "main_email",
-			  "main_phone_number",
-			  "main_fax_number"
-			]
-		  }
-		]
-	  },
-	  "officials": {
-		"type": "array",
-		"items": [
-		  {
-			"type": "object",
-			"properties": {
-			  "id": {
-				"type": "string"
-			  },
-			  "office_type": {
-				"type": "string"
-			  },
-			  "title": {
-				"type": "string"
-			  },
-			  "suffix": {
-				"type": "string"
-			  },
-			  "first_name": {
-				"type": "string"
-			  },
-			  "initial": {
-				"type": "string"
-			  },
-			  "last_name": {
-				"type": "string"
-			  },
-			  "email": {
-				"type": "string"
-			  },
-			  "phone": {
-				"type": "string"
-			  },
-			  "fax": {
-				"type": "string"
-			  },
-			  "office_uri": {
-				"type": "string"
-			  },
-			  "resource_uri": {
-				"type": "string"
-			  }
-			},
-			"required": [
-			  "id",
-			  "office_type",
-			  "title",
-			  "suffix",
-			  "first_name",
-			  "initial",
-			  "last_name",
-			  "email",
-			  "phone",
-			  "fax",
-			  "office_uri",
-			  "resource_uri"
-			]
-		  },
-		  {
-			"type": "object",
-			"properties": {
-			  "id": {
-				"type": "string"
-			  },
-			  "office_type": {
-				"type": "string"
-			  },
-			  "title": {
-				"type": "string"
-			  },
-			  "suffix": {
-				"type": "string"
-			  },
-			  "first_name": {
-				"type": "string"
-			  },
-			  "initial": {
-				"type": "string"
-			  },
-			  "last_name": {
-				"type": "string"
-			  },
-			  "email": {
-				"type": "string"
-			  },
-			  "phone": {
-				"type": "string"
-			  },
-			  "fax": {
-				"type": "string"
-			  },
-			  "office_uri": {
-				"type": "string"
-			  },
-			  "resource_uri": {
-				"type": "string"
-			  }
-			},
-			"required": [
-			  "id",
-			  "office_type",
-			  "title",
-			  "suffix",
-			  "first_name",
-			  "initial",
-			  "last_name",
-			  "email",
-			  "phone",
-			  "fax",
-			  "office_uri",
-			  "resource_uri"
-			]
-		  }
-		]
-	  },
-	  "resource_uri": {
-		"type": "string"
-	  },
-	  "geoid": {
-		"type": "string"
-	  },
-	  "type": {
-		"type": "string"
-	  }
-	},
-	"required": [
-	  "id",
-	  "updated",
-	  "region",
-	  "hours",
-	  "notes",
-	  "status",
-	  "addresses",
-	  "officials",
-	  "resource_uri",
-	  "geoid",
-	  "type"
-	]
-  }
+	"type": "object",
+	"additionalProperties": false
+		}
+}
