@@ -47,7 +47,6 @@ class USVoteFoundationStream(HttpStream, ABC):
 
         if response_json["meta"]["next"]:
             next_url = response_json["meta"]["next"]
-            print("NEXT: " + next_url)
             next_endpoint = next_url.replace(self.url_base,"")
             return next_endpoint
 
