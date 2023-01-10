@@ -1,25 +1,43 @@
-name: publish_image
+name: build_and_publish_image
 
-env: #TODO() be sure to manually update the image tag!
-  IMAGE_TAG: "0.0.1"
-
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - v*
+  pull_request:
 
 jobs:
-  publish-source-usvote-foundation-image:
+  publish-source-twitter-image:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+
+    - name: Docker Metadata
+      id: meta
+      uses: docker/metadata-action@v4
+      with:
+        images: ghcr.io/community-tech-alliance/source-usvote-foundation
+
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v2
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
 
     - name: Login to GitHub Container Registry
-      uses: docker/login-action@v1
+      uses: docker/login-action@v2
       with:
         registry: ghcr.io
-        username: community-tech-alliance
-        password: ${{ secrets.CR_PAT }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Build the source_usvote_foundation Docker image
-      run: |
-        docker build . --tag ghcr.io/community-tech-alliance/source-usvote-foundation:$IMAGE_TAG
-        docker push ghcr.io/community-tech-alliance/source-usvote-foundation:$IMAGE_TAG
+    - name: Build and push
+      uses: docker/build-push-action@v3
+      with:
+        context: .
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}

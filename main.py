@@ -6,7 +6,7 @@
 import sys
 
 from airbyte_cdk.entrypoint import launch
-from source_USVoteFoundation import SourceUSVoteFoundation
+from source_usvote_foundation import SourceUSVoteFoundation
 
 if __name__ == "__main__":
     source = SourceUSVoteFoundation()
