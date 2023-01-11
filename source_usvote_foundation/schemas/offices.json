@@ -11,7 +11,7 @@
 		]
 	  },
 	  "updated": {
-		"type": "string",
+		"type": ["string","null"],
 		"default": "2022-07-28T07:36:43.982418Z",
 		"examples": [
 		  "2022-07-28T07:36:43.982418Z"
@@ -19,21 +19,21 @@
 		"format": "date-time"
 	  },
 	  "region": {
-		"type": "string",
+		"type": ["string","null"],
 		"default": "https://api.usvotefoundation.org/eod/v3/regions/432239",
 		"examples": [
 		  "https://api.usvotefoundation.org/eod/v3/regions/432239"
 		]
 	  },
 	  "hours": {
-		"type": "string",
+		"type": ["string","null"],
 		"default": "M-F: 8:30a-5p Eastern",
 		"examples": [
 		  "M-F: 8:30a-5p Eastern"
 		]
 	  },
 	  "notes": {
-		"type": "string",
+		"type": ["string","null"],
 		"default": "The Abbeville County Voter Registration Board and Election Commission constantly reviews Overseas and Military voter absentee applications.  \r\n\r\nPlease take the time to update your mailing address.\r\n\r\nIf you choose not to vote absentee, but would rather vote at your home precinct in person, we need to know that too.\r\n\r\nYou can let us know exactly where you are by mail, email, fax or even telephone. \r\n\r\nRemember:  \r\nEvery Vote Matters.\r\nEvery Vote Counts.",
 		"examples": [
 		  "The Abbeville County Voter Registration Board and Election Commission constantly reviews Overseas and Military voter absentee applications.  \r\n\r\nPlease take the time to update your mailing address.\r\n\r\nIf you choose not to vote absentee, but would rather vote at your home precinct in person, we need to know that too.\r\n\r\nYou can let us know exactly where you are by mail, email, fax or even telephone. \r\n\r\nRemember:  \r\nEvery Vote Matters.\r\nEvery Vote Counts."
@@ -59,56 +59,56 @@
 			  ]
 			},
 			"address_to": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "Registration & Elections",
 			  "examples": [
 				"Registration & Elections"
 			  ]
 			},
 			"street1": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "Abbeville County Complex",
 			  "examples": [
 				"Abbeville County Complex"
 			  ]
 			},
 			"street2": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "903 Greenwood St W STE 2500",
 			  "examples": [
 				"903 Greenwood St W STE 2500"
 			  ]
 			},
 			"city": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "Abbeville",
 			  "examples": [
 				"Abbeville"
 			  ]
 			},
 			"state": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "SC",
 			  "examples": [
 				"SC"
 			  ]
 			},
 			"zip": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "29620",
 			  "examples": [
 				"29620"
 			  ]
 			},
 			"zip4": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "2470",
 			  "examples": [
 				"2470"
 			  ]
 			},
 			"website": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "http://www.abbevillecountysc.com/",
 			  "examples": [
 				"http://www.abbevillecountysc.com/"
@@ -133,7 +133,7 @@
 			"functions": {
 			  "type": "array",
 			  "items": {
-				"type": "string",
+				"type": ["string","null"],
 				"default": "OVS_RET",
 				"examples": [
 				  "OVS_RET"
@@ -141,7 +141,7 @@
 			  }
 			},
 			"primary_contact_uri": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "https://api.usvotefoundation.org/eod/v3/officials/1328043",
 			  "examples": [
 				"https://api.usvotefoundation.org/eod/v3/officials/1328043"
@@ -160,14 +160,14 @@
 					]
 				  },
 				  "address_uri": {
-					"type": "string",
+					"type": ["string","null"],
 					"default": "https://api.usvotefoundation.org/eod/v3/addresses/366670",
 					"examples": [
 					  "https://api.usvotefoundation.org/eod/v3/addresses/366670"
 					]
 				  },
 				  "official_uri": {
-					"type": "string",
+					"type": ["string","null"],
 					"default": "https://api.usvotefoundation.org/eod/v3/officials/1330855",
 					"examples": [
 					  "https://api.usvotefoundation.org/eod/v3/officials/1330855"
@@ -183,14 +183,14 @@
 			  }
 			},
 			"resource_uri": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "https://api.usvotefoundation.org/eod/v3/addresses/366670",
 			  "examples": [
 				"https://api.usvotefoundation.org/eod/v3/addresses/366670"
 			  ]
 			},
 			"main_email": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "rcurtis@abbevillecountysc.com",
 			  "examples": [
 				"rcurtis@abbevillecountysc.com"
@@ -198,14 +198,14 @@
 			  "format": "email"
 			},
 			"main_phone_number": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "(864) 366-3662 x53",
 			  "examples": [
 				"(864) 366-3662 x53"
 			  ]
 			},
 			"main_fax_number": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "(864) 366-5797",
 			  "examples": [
 				"(864) 366-5797"
@@ -248,41 +248,41 @@
 			  ]
 			},
 			"office_type": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "primary",
 			  "examples": [
 				"primary"
 			  ]
 			},
 			"title": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "Local Election Official",
 			  "examples": [
 				"Local Election Official"
 			  ]
 			},
 			"suffix": {
-			  "type": "string"
+			  "type": ["string","null"]
 			},
 			"first_name": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "Randall",
 			  "examples": [
 				"Randall"
 			  ]
 			},
 			"initial": {
-			  "type": "string"
+			  "type": ["string","null"]
 			},
 			"last_name": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "Curtis",
 			  "examples": [
 				"Curtis"
 			  ]
 			},
 			"email": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "rcurtis@abbevillecountysc.com",
 			  "examples": [
 				"rcurtis@abbevillecountysc.com"
@@ -290,28 +290,28 @@
 			  "format": "email"
 			},
 			"phone": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "(864) 366-2400 x53",
 			  "examples": [
 				"(864) 366-2400 x53"
 			  ]
 			},
 			"fax": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "(864) 366-5797",
 			  "examples": [
 				"(864) 366-5797"
 			  ]
 			},
 			"office_uri": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "https://api.usvotefoundation.org/eod/v3/offices/390537",
 			  "examples": [
 				"https://api.usvotefoundation.org/eod/v3/offices/390537"
 			  ]
 			},
 			"resource_uri": {
-			  "type": "string",
+			  "type": ["string","null"],
 			  "default": "https://api.usvotefoundation.org/eod/v3/officials/1328043",
 			  "examples": [
 				"https://api.usvotefoundation.org/eod/v3/officials/1328043"
@@ -336,21 +336,21 @@
 		}
 	  },
 	  "resource_uri": {
-		"type": "string",
+		"type": ["string","null"],
 		"default": "https://api.usvotefoundation.org/eod/v3/offices/390537",
 		"examples": [
 		  "https://api.usvotefoundation.org/eod/v3/offices/390537"
 		]
 	  },
 	  "geoid": {
-		"type": "string",
+		"type": ["string","null"],
 		"default": "45001",
 		"examples": [
 		  "45001"
 		]
 	  },
 	  "type": {
-		"type": "string",
+		"type": ["string","null"],
 		"default": "All",
 		"examples": [
 		  "All"
