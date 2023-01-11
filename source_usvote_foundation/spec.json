@@ -57,13 +57,13 @@
       },
       "municipality_name": {
         "type": "string",
-        "title": "Municipality Type",
+        "title": "Municipality Name",
         "airbyte_secret": false,
         "order": 8
       },
       "municipality_type": {
         "type": "string",
-        "title": "Municipality type",
+        "title": "Municipality Type",
         "airbyte_secret": false,
         "order": 9
       },
